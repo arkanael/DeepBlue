@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Camada de Apresentação", "1 - Camada de Apresentação", "{BECE92ED-9E09-40BA-9478-4897DF859526}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{6FE95C18-E338-4AC2-BB8B-2777A50861D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{91482FF9-EDE6-46A4-8603-35D86514732B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infraestructure", "4 - Infraestructure", "{9275EF68-A67A-4CD1-B719-4C60DBABFB61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{E7D4A784-BB85-494F-BD68-29E0FDC9DBDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepBlue.Application", "src\DeepBlue.Application\DeepBlue.Application.csproj", "{0E40A312-949F-443F-91FA-594C3D86BF02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepBlue.Presentation.API", "src\DeepBlue.Presentation.API\DeepBlue.Presentation.API.csproj", "{332FE40E-869A-4A1A-AEA0-FDD0AAD4CC3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepBlue.Domain", "src\DeepBlue.Domain\DeepBlue.Domain.csproj", "{0B618DA7-4450-42A8-92C5-C0606C7D635D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepBlue.Infraestructure.Data", "src\DeepBlue.Infraestructure.Data\DeepBlue.Infraestructure.Data.csproj", "{79D4056B-CE2E-47B5-925B-A299505AA3C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1573491D-3E15-4AA4-A829-5E7D3D856286}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - Logs", "4.2 - Logs", "{3AE96336-79EE-4118-9690-FC5391E4FB19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeepBlue.Infraestructure.Logs", "src\DeepBlue.Infraestructure.Logs\DeepBlue.Infraestructure.Logs.csproj", "{E83FE98A-D055-4EBD-B369-93349C34B0F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - CrossCutting", "5 - CrossCutting", "{0DCA22F2-625B-4A96-90D9-009C5D63C8F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepBlue.CrossCutting", "src\DeepBlue.CrossCutting\DeepBlue.CrossCutting.csproj", "{516B251A-0245-4BF1-A3EA-B0DCDD452549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E40A312-949F-443F-91FA-594C3D86BF02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E40A312-949F-443F-91FA-594C3D86BF02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E40A312-949F-443F-91FA-594C3D86BF02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E40A312-949F-443F-91FA-594C3D86BF02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332FE40E-869A-4A1A-AEA0-FDD0AAD4CC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332FE40E-869A-4A1A-AEA0-FDD0AAD4CC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332FE40E-869A-4A1A-AEA0-FDD0AAD4CC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332FE40E-869A-4A1A-AEA0-FDD0AAD4CC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B618DA7-4450-42A8-92C5-C0606C7D635D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B618DA7-4450-42A8-92C5-C0606C7D635D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B618DA7-4450-42A8-92C5-C0606C7D635D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B618DA7-4450-42A8-92C5-C0606C7D635D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D4056B-CE2E-47B5-925B-A299505AA3C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D4056B-CE2E-47B5-925B-A299505AA3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D4056B-CE2E-47B5-925B-A299505AA3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D4056B-CE2E-47B5-925B-A299505AA3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E83FE98A-D055-4EBD-B369-93349C34B0F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E83FE98A-D055-4EBD-B369-93349C34B0F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E83FE98A-D055-4EBD-B369-93349C34B0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E83FE98A-D055-4EBD-B369-93349C34B0F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{516B251A-0245-4BF1-A3EA-B0DCDD452549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{516B251A-0245-4BF1-A3EA-B0DCDD452549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{516B251A-0245-4BF1-A3EA-B0DCDD452549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{516B251A-0245-4BF1-A3EA-B0DCDD452549}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E7D4A784-BB85-494F-BD68-29E0FDC9DBDD} = {9275EF68-A67A-4CD1-B719-4C60DBABFB61}
+		{0E40A312-949F-443F-91FA-594C3D86BF02} = {6FE95C18-E338-4AC2-BB8B-2777A50861D6}
+		{332FE40E-869A-4A1A-AEA0-FDD0AAD4CC3E} = {BECE92ED-9E09-40BA-9478-4897DF859526}
+		{0B618DA7-4450-42A8-92C5-C0606C7D635D} = {91482FF9-EDE6-46A4-8603-35D86514732B}
+		{79D4056B-CE2E-47B5-925B-A299505AA3C8} = {E7D4A784-BB85-494F-BD68-29E0FDC9DBDD}
+		{3AE96336-79EE-4118-9690-FC5391E4FB19} = {9275EF68-A67A-4CD1-B719-4C60DBABFB61}
+		{E83FE98A-D055-4EBD-B369-93349C34B0F2} = {3AE96336-79EE-4118-9690-FC5391E4FB19}
+		{516B251A-0245-4BF1-A3EA-B0DCDD452549} = {0DCA22F2-625B-4A96-90D9-009C5D63C8F5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81259DE1-E0F9-4A37-BEAB-948B10C6652D}
+	EndGlobalSection
+EndGlobal
