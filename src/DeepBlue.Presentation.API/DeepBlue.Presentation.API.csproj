@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DeepBlue.Application\DeepBlue.Application.csproj" />
+    <ProjectReference Include="..\DeepBlue.CrossCutting.IoC\DeepBlue.CrossCutting.IoC.csproj" />
     <ProjectReference Include="..\DeepBlue.Infraestructure.Data\DeepBlue.Infraestructure.Data.csproj" />
     <ProjectReference Include="..\DeepBlue.Infraestructure.Logs\DeepBlue.Infraestructure.Logs.csproj" />
   </ItemGroup>

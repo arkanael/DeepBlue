@@ -7,9 +7,9 @@ namespace DeepBlue.Infraestructure.Data.Repositories
 {
     public class PessoaRepository : BaseRepository<Pessoa, Guid>, IPessoaRepository
     {
-        public PessoaRepository(DataContext context):base(context)
+        public PessoaRepository(DataContext context) : base(context)
         {
-           
+
         }
     }
 }

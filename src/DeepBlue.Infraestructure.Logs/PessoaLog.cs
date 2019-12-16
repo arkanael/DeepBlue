@@ -14,7 +14,7 @@ namespace DeepBlue.Infraestructure.Logs
 
         public void Dispose()
         {
-           //TODO
+            //TODO
         }
     }
 }

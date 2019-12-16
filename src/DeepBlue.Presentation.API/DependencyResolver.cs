@@ -15,7 +15,7 @@ namespace DeepBlue.Presentation.API
 {
     public class DependencyResolver
     {
-      
+
         public static void Register(IServiceCollection services, IConfiguration configuration)
         {
 

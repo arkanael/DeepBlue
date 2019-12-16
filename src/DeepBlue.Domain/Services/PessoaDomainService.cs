@@ -7,9 +7,9 @@ namespace DeepBlue.Domain.Services
 {
     public class PessoaDomainService : BaseDomainService<Pessoa, Guid>, IPessoaDomainService
     {
-        public PessoaDomainService(IPessoaRepository repository):base(repository)
+        public PessoaDomainService(IPessoaRepository repository) : base(repository)
         {
-            
+
         }
     }
 }

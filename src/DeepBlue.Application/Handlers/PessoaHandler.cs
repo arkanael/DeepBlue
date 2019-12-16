@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DeepBlue.Application.Handlers
 {
-    public class PessoaHandler : 
+    public class PessoaHandler :
         IRequestHandler<PessoaCreateCommand, string>,
         IRequestHandler<PessoaUpdateCommand, string>,
         IRequestHandler<PessoaDeleteCommand, string>

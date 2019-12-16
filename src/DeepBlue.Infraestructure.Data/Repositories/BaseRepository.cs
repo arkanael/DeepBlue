@@ -5,11 +5,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace DeepBlue.Infraestructure.Data.Repositories
 {
-    public abstract class BaseRepository<TEntity, TKey> : IBaseRepository<TEntity, TKey> where TEntity : class 
+    public abstract class BaseRepository<TEntity, TKey> : IBaseRepository<TEntity, TKey> where TEntity : class
     {
         protected readonly DataContext context;
 
@@ -41,7 +40,7 @@ namespace DeepBlue.Infraestructure.Data.Repositories
             return context.Set<TEntity>().ToList();
         }
 
-        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> expression)
+        public IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> expression)
         {
             return context.Set<TEntity>().AsNoTracking().Where(expression);
         }

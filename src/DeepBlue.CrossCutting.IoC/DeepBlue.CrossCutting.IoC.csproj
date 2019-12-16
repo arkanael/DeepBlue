@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeepBlue.Application\DeepBlue.Application.csproj" />
+    <ProjectReference Include="..\DeepBlue.Infraestructure.Data\DeepBlue.Infraestructure.Data.csproj" />
+    <ProjectReference Include="..\DeepBlue.Infraestructure.Logs\DeepBlue.Infraestructure.Logs.csproj" />
+  </ItemGroup>
+
+</Project>

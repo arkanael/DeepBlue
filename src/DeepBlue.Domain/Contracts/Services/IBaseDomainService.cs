@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DeepBlue.Domain.Contracts.Services
 {
@@ -9,7 +8,6 @@ namespace DeepBlue.Domain.Contracts.Services
         void Create(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);
-
         IEnumerable<TEntity> GetAll();
         TEntity GetId(TKey id);
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace DeepBlue.Domain.Contracts.Repositories
 {
@@ -11,7 +11,7 @@ namespace DeepBlue.Domain.Contracts.Repositories
         void Update(TEntity entity);
         void Delete(TEntity entity);
         IEnumerable<TEntity> FindAll();
-        IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> expression);
+        IQueryable<TEntity> Find(Expression<Func<TEntity, bool>> expression);
         TEntity FindById(TKey id);
 
     }

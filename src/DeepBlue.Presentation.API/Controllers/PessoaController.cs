@@ -21,7 +21,7 @@ namespace Projeto.Presentation.Controllers
         public async Task<IActionResult> Post(PessoaCreateCommand command)
         {
             if (!ModelState.IsValid) return BadRequest();
-          
+
             try
             {
                 var result = await pessoaApplicationService.Create(command);

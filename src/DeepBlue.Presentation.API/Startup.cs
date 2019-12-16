@@ -1,14 +1,9 @@
 ﻿using AutoMapper;
-using DeepBlue.Application.Handlers;
-using DeepBlue.Application.Profiles;
-using DeepBlue.Domain.Contracts.Repositories;
-using DeepBlue.Infraestructure.Data.Context;
-using DeepBlue.Infraestructure.Data.Repositories;
+using DeepBlue.CrossCutting.IoC;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
@@ -29,11 +24,12 @@ namespace DeepBlue.Presentation.API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            DependencyResolver.Register(services, Configuration);
+            //DependencyResolver.Register(services, Configuration);
+            RegisterServices(services, Configuration);
 
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
+            //services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddSwaggerGen(c =>
             {
@@ -57,6 +53,8 @@ namespace DeepBlue.Presentation.API
                        .AllowAnyHeader()
                        .AllowAnyMethod();
             }));
+
+
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -78,6 +76,11 @@ namespace DeepBlue.Presentation.API
             });
 
             app.UseCors("DefaultPolicy");
+        }
+
+        private static void RegisterServices(IServiceCollection services, IConfiguration configuration)
+        {
+            NativeInjectorBootStrapper.Register(services, configuration);
         }
     }
 }
