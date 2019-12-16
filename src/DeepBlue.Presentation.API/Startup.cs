@@ -24,12 +24,7 @@ namespace DeepBlue.Presentation.API
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            //DependencyResolver.Register(services, Configuration);
             RegisterServices(services, Configuration);
-
-            //services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-            //services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddSwaggerGen(c =>
             {
