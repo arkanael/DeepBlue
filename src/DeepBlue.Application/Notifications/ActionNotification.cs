@@ -2,6 +2,6 @@
 {
     public enum ActionNotification
     {
-        Criado = 1, Atualzado = 2, Excluido = 3
+        Criado = 1, Atualizado = 2, Excluido = 3
     }
 }
